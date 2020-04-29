@@ -21,7 +21,10 @@ body {
     padding-top: 10%;
   }
 
- 
+ .row1colur{
+   border-style: groove;
+  background-color: cadetblue;
+ }
 
 
 /*
