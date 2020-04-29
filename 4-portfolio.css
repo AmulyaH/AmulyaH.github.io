@@ -17,8 +17,12 @@ body {
     
   }
 
-  #about, #skills{
+  #about, #skills, #projects, #resume, #contact{
     padding-top: 10%;
+  }
+
+  #contact{
+    padding-bottom: 15%;
   }
 
  .row1colur{
