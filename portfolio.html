@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" type="text/css"
+  href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+  
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="portfolio.css" />
+</head>
+
+  <body>
+    <nav id="home" class="navbar navbar-expand-sm fixed-top">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <button id="defaultOpen" class="anibutton tabbutton" onclick="openPage('home', this, 'cadetblue')"> Home </button>
+        </li>
+        <li class="nav-item">
+          <button class="anibutton tabbutton" onclick="openPage('about', this, 'cadetblue')"> About </button>
+        </li>
+        <li class="nav-item">
+          <button class="anibutton tabbutton" onclick="openPage('skills', this, 'cadetblue')"> Skills </button>
+        </li>
+        <li class="nav-item">
+          <button class="anibutton tabbutton" onclick="openPage('projects', this, 'cadetblue')"> Projects </button>
+        </li>
+        <li class="nav-item">
+          <button class="anibutton tabbutton" onclick="openPage('resume', this, 'cadetblue')"> Resume </button>
+        </li>
+        <li class="nav-item">
+          <button class="anibutton tabbutton" onclick="openPage('contact', this, 'cadetblue')"> Contact </button>
+        </li>
+      </ul>
+    </nav>
+
+    <div id="skills" class="container tabcontent">
+      <div class="row">
+        <div class="col-sm-4">
+          <div class="row1colur">
+            <div class="skillHeading">
+              <h1>Area</h1>
+            </div>
+            <div class="skillDetails">
+              <ul>
+                <li><p>Machine Learning</p></li>
+                <li><p>Computer vision</p></li>
+                <li><p>Artificial Inteligence</p></li>
+                <li><p>Operating Systems</p></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="row1colur">
+            <div class="skillHeading">
+              <h1>Language</h1>
+            </div>
+            <div class="skillDetails">
+              <ul>
+                <li><p>C/C++</p></li>
+                <li><p>HTML</p></li>
+                <li><p>CSS</p></li>
+                <li><p>JavaScript</p></li>
+                <li><p>Python</p></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="row1colur">
+            <div class="skillHeading">
+              <h1>Frameworks</h1>
+            </div>
+            <div class="skillDetails">
+              <ul>
+                <li><p>Bootstrap</p></li>
+                <li><p>MySql</p></li>
+                <li><p>Jquery</p></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="projects" class="container-fluid tabcontent">
+      <div class="row">
+        <div class="col-sm-3">
+          <div class="carsafety">
+            <div class="flip-box">
+              <div class="flip-box-inner">
+                <div class="flip-box-front">
+                  <h1 class="bg-info">CAR SAFETY</h1>
+                </div>
+                <div class="flip-box-back">
+                  <h1>CAR SAFETY</h1>
+                  <div class="flipbackContent">
+                    <ul>
+                      <li><p>This project is done for Inteligence Robtitics subject</p></li>
+                      <li><p>Devloped the project using Python on Raspibery PI board</p></li>
+                      <li><p>Car Safety project is about Controlling vehicle motion and directions </p></li>
+                      <li><p>Avoids collisions by monitoring relative speed, position, and direction of other vehicles</p></li>
+                      <li><p>Find the direction of movement by using RaspberyPi camera</p></li>
+                      <li><p>When encounters an obstracle vehical will take a right turn and pass the obstacle</p></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-3">
+          <div class="vslam">
+            <div class="flip-box">
+              <div class="flip-box-inner">
+                <div class="flip-box-front">
+                  <h1 class="bg-info">VISUAL SLAM</h1>
+                </div>
+                <div class="flip-box-back">
+                  <h1>VISUAL SLAM</h1>
+                  <div class="flipbackContent">
+                    <ul>
+                      <li><p>This project is done for Computer Vison Subject</p></li>
+                      <li><p>SLAM is "Simultanious Localization and Mapping"</p></li>
+                      <li><p>Input comes from the images or frame of images(vedio) so its called visual SLAM</p></li>
+                      <li><p>Project is about to findinging the mapping and the finding the location of the agent simulatniously</p></li>
+                      <li><p>Indentifies the maching points between frame of images and does the matching</p></li>
+                      <li><p>Devloped this project using Python</p></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-3">
+          <div class="tictactoe">
+            <div class="flip-box">
+              <div class="flip-box-inner">
+                <div class="flip-box-front">
+                  <h1 class="bg-info">TIC-TAC-TOE</h1>
+                </div>
+                <div class="flip-box-back">
+                  <h1>TIC-TAC-TOE</h1>
+                  <div class="flipbackContent">
+                    <ul>
+                      <li><p>This project is done for Machine Learning Subject</p></li>
+                      <li><p>Devloped the project using Python and Q learning algorithm</p></li>
+                      <li><p>Tic-Tac-Toe is a famous board game</p></li>
+                      <li><p>In this project machine will play the game againt human</p></li>
+                      <li><p>We have trained the machine for 30000 random games before it starts play with human</p></li>
+                      <li><p>We have used Reenforcent learning concept in this project, so machine will learning by each of it's mistake</p></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-3">
+          <div class="mazesolver">
+            <div class="flip-box">
+              <div class="flip-box-inner">
+                <div class="flip-box-front">
+                  <h1 class="bg-info">MAZE SOLVER</h1>
+                </div>
+                <div class="flip-box-back">
+                  <h1>MAZE SOLVER</h1>
+                  <div class="flipbackContent">
+                    <ul>
+                      <li><p>This project is done for Advanced C++ Subject</p></li>
+                      <li><p>Devloped the project using C++</p></li>
+                      <li><p>The project is about finding the shortest ditance from source to end point</p></li>
+                      <li><p>Used Breadth First Serach, Depath First Search and Dijkistra Alogorithm to solve the maze</p></li>
+                      <li><p>Finally need to do maze tour, where will find shortest path to each corner</p></li>
+                      <li><p>For the Tour, will start from middle of the maze touch each corner of the maze and return back to middle</p></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="resume" class="container tabcontent">
+      <div class="row">
+        <div class="col-sm-4 offset-sm-2">
+          <div class="divresume">
+            <img src="Resume-1.png" class="img-responsive" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <form action="mailto:someone@example.com" method="post" enctype="text/plain">
+    <div id="contact" class="container tabcontent">
+      <div class="form-group row">
+        <div class="col-sm-10 offset-sm-1 col-md-10 offset-md-1 col-lg-4 offset-lg-4  col-xs-5 offset-sm-1">
+          <div class="divcontact">
+            <form>
+              <div class="form-group row customDiv">
+                <div class="col-sm-12">
+                  <h1>Contact Me</h1>
+                </div>
+              </div>
+    
+              <div class="form-group row">
+                <div class="col-sm-12">
+                  <label for="fname">Your Name *</label>
+                  <input type="text" class="form-control form-control-lg" id="name" name="name" required>
+                </div>
+              </div>
+    
+              <div class="form-group row">
+                <div class="col-sm-12">
+                  <label for="email">Your Email *</label>
+                  <input type="text" class="form-control form-control-lg" id="email" name="email" required>
+                </div>
+              </div>
+    
+              <div class="form-group row">
+                <div class="col-sm-12">
+                  <label for="lblmessage">Write your meaasge</label>
+                  <textarea id="txtmessage" rows="5" class="form-control form-control-lg" name="Comment"></textarea>
+                </div>
+              </div>
+    
+              <div class="form-group row">
+                <div class="col-sm-6 offset-sm-3">
+                  <input type="submit" id="btnSubmit" class="btn bg-info col-sm-12 btn-xl" value="Submit">
+                </div>
+              </div> 
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </form>
+
+    <div class="footer">
+      <div class="row">
+        <div class="col-sm-1 offset-sm-9">
+          <a href="#" class="fa fa-github iconsize"></a>
+        </div>
+        <div class="col-sm-1">
+            <a href="#" class="fa fa-linkedin iconsize"></a>
+        </div>
+        <div class="col-sm-1">
+          <a href="#" class="fa fa-envelope iconsize"></a>
+        </div>
+      </div>
+    </div>
+
+
+    <script>
+      function openPage(pageName,elmnt,color) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+          tabcontent[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("anibutton");
+        for (i = 0; i < tablinks.length; i++) {
+          tablinks[i].style.backgroundColor = "";
+        }
+        document.getElementById(pageName).style.display = "block";
+        elmnt.style.backgroundColor = color;
+      }
+      
+      // Get the element with id="defaultOpen" and click on it
+      document.getElementById("defaultOpen").click();
+      </script>
+
+  <body>
+</html>

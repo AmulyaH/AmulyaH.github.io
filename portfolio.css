@@ -1,0 +1,221 @@
+body {
+    background-image: url(b4.jpg);
+    font-family: 'Open Sans','Lobster', 'Helvetica Neue', sans-serif;
+    color: #fff;
+  }
+
+  #home{
+    background-image: url(i3.png);
+  }
+
+  .fa:hover {
+    opacity: 0.7;
+    color: #111;
+  }
+
+  .fa {
+  color: #111;
+  }
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 4vh;
+  background-image: url(i3.png);
+  color: white;
+  text-align: center;
+ }
+
+#skills{
+  margin-top: 15%;
+}
+
+#skills > div > div > div
+{
+  height: 400px;
+  padding: 10px;
+  margin: 0.03em;
+  border: 3px solid #f1f1f1;
+  background-image: url(i3.png);
+  
+  
+}
+#skills > div > div
+{
+  padding: 0.5em;
+  
+}
+
+#projects{
+  margin-top: 10%;
+}
+
+#projects > div > div > div
+{
+  height: 500px;
+  padding: 1px;
+  margin: 0.03em;
+  border: 3px solid #f1f1f1;
+  text-align: center;
+  
+}
+#projects > div > div
+{
+  padding: 0.5em;
+}
+
+
+.tablink {
+  background-color: #555;
+  color: white;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+  width: 25%;
+}
+
+.tablink:hover {
+  background-color: #777;
+}
+
+.anibutton {
+  padding: 15px 25px;
+  font-size: 24px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  background-color: transparent;
+  border: none;
+  border-radius: 15px;
+  font-weight: 600;
+}
+
+.anibutton:hover {background-color: #98bac0}
+  
+.anibutton:active {
+  box-shadow: 0 1px #666;
+  transform: translateY(4px);
+}
+
+.skillHeading{
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  color: #111;
+  font-weight: bolder;
+}
+
+.skillDetails{
+  font-weight: 500;
+  text-align: justify;
+  padding-left: 20%;
+  font-size: large;
+  color: #111;
+  font-weight: bolder;
+}
+
+.carsafety{
+  background-image: url(car.png);
+}
+
+.tictactoe{
+  background-image: url(tic1.jpg);
+}
+
+.mazesolver{
+  background-image: url(maze.jpg);
+}
+
+.vslam{
+  background-image: url(slam.jpg);
+}
+
+.divresume{
+  background-image: url(Resume.jpg);
+}
+
+#skills > div > div
+{
+  padding: 0.5em;
+}
+
+.divresume{
+  padding-top: 23%;
+}
+
+#contact{
+ margin-top: 10%;
+}
+
+.divcontact{
+  padding:10%;
+  background-image: url(i3.png);
+  border-radius: 8px;
+  color: #111;
+  font-weight: bold;
+}
+
+.btn-xl {
+  padding: 10px 20px;
+  font-size: 14pt;
+  border-radius: 6px;
+  text-align: center;
+  font-weight: 600;
+  color: #fff;
+}
+
+.flip-box {
+  background-color: transparent;
+  width: 100%;
+  height: 100%;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px;
+}
+
+.flip-box-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-box:hover .flip-box-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-box-front, .flip-box-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  
+}
+
+.flip-box-front {
+  color: #111;
+  font-weight: bold
+}
+
+.flip-box-back {
+  background-image: url(i3.png);
+  color: #111;
+  transform: rotateY(180deg);
+  font-weight: bolder;
+}
+
+.flipbackContent{
+  text-align: left;
+  padding-top: 20px;
+}
+
+
+
+  
