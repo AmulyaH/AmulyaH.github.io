@@ -11,7 +11,6 @@ body {
 
   .fa:hover {
     opacity: 0.7;
-    color: #111;
   }
 
   .fa {
@@ -29,39 +28,24 @@ body {
 #skills > div > div > div
 {
   height: 400px;
-  margin: 0.03em;
   border: 4px solid #f1f1f1;
   background-image: url('divBackGroung.png');
-}
-
-#skills > div > div
-{
-  padding: 0.5em;
 }
 
 #projects > div > div > div
 {
   height: 500px;
-  padding: 1px;
-  margin: 0.03em;
   border: 4px solid #f1f1f1;
-  text-align: center;
-}
-#projects > div > div
-{
-  padding: 0.5em;
 }
 
 .anibutton {
   padding: 15px 25px;
   font-size: 24px;
-  text-align: center;
   cursor: pointer;
   outline: none;
   background-color: transparent;
   border: none;
   border-radius: 15px;
-  font-weight: 600;
 }
 
 .anibutton:hover {background-color: #7bb4be}
@@ -86,28 +70,9 @@ body {
   background-image: url(Resume.jpg);
 }
 
-#skills > div > div
-{
-  padding: 0.5em;
-}
 
 .divcontact{
-  padding:10%;
   background-image: url('divBackGroung.png');
-  border-radius: 8px;
-  font-weight: bold;
-}
-
-.btn-xl {
-  padding: 10px 20px;
-  font-size: 14pt;
-  border-radius: 6px;
-  text-align: center;
-  font-weight: 600;
-}
-
-.btn-xl:hover{
-  color: #fff;
 }
 
 .flip-box {
@@ -139,23 +104,11 @@ body {
   backface-visibility: hidden;
 }
 
-.flip-box-front {
-  font-weight: bold
-}
-
 .flip-box-back {
   background-image: url('divBackGroung.png');
-  color: #111;
   transform: rotateY(180deg);
-  font-weight: bolder;
-}
-
-.flipbackContent{
-  text-align: left;
-  padding-top: 20px;
 }
 
 .divabout{
   background-image: url('divBackGroung.png');
-  font-weight: bold;
 }
