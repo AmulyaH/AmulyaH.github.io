@@ -1,11 +1,12 @@
 body {
-    background-image: url(b4.jpg);
+    background-image: url('bodyBackGroung.jpg');
     font-family: 'Open Sans','Lobster', 'Helvetica Neue', sans-serif;
-    color: #fff;
+    color: #111;
+    padding: 10px;
   }
 
-  #home{
-    background-image: url(i3.png);
+  .divPadding{
+    padding: 5%;
   }
 
   .fa:hover {
@@ -21,35 +22,21 @@ body {
   position: fixed;
   left: 0;
   bottom: 0;
-  width: 100%;
-  height: 4vh;
-  background-image: url(i3.png);
-  color: white;
-  text-align: center;
+  height: 5vh;
+  background-image: url('divBackGroung.png');
  }
-
-#skills{
-  margin-top: 15%;
-}
 
 #skills > div > div > div
 {
   height: 400px;
-  padding: 10px;
   margin: 0.03em;
-  border: 3px solid #f1f1f1;
-  background-image: url(i3.png);
-  
-  
+  border: 4px solid #f1f1f1;
+  background-image: url('divBackGroung.png');
 }
+
 #skills > div > div
 {
   padding: 0.5em;
-  
-}
-
-#projects{
-  margin-top: 10%;
 }
 
 #projects > div > div > div
@@ -57,30 +44,12 @@ body {
   height: 500px;
   padding: 1px;
   margin: 0.03em;
-  border: 3px solid #f1f1f1;
+  border: 4px solid #f1f1f1;
   text-align: center;
-  
 }
 #projects > div > div
 {
   padding: 0.5em;
-}
-
-
-.tablink {
-  background-color: #555;
-  color: white;
-  float: left;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  padding: 14px 16px;
-  font-size: 17px;
-  width: 25%;
-}
-
-.tablink:hover {
-  background-color: #777;
 }
 
 .anibutton {
@@ -95,32 +64,10 @@ body {
   font-weight: 600;
 }
 
-.anibutton:hover {background-color: #98bac0}
+.anibutton:hover {background-color: #7bb4be}
   
-.anibutton:active {
-  box-shadow: 0 1px #666;
-  transform: translateY(4px);
-}
-
-.skillHeading{
-  text-align: center;
-  padding-top: 15px;
-  padding-bottom: 15px;
-  color: #111;
-  font-weight: bolder;
-}
-
-.skillDetails{
-  font-weight: 500;
-  text-align: justify;
-  padding-left: 20%;
-  font-size: large;
-  color: #111;
-  font-weight: bolder;
-}
-
 .carsafety{
-  background-image: url(car.png);
+  background-image: url('carSafety.png');
 }
 
 .tictactoe{
@@ -144,19 +91,10 @@ body {
   padding: 0.5em;
 }
 
-.divresume{
-  padding-top: 23%;
-}
-
-#contact{
- margin-top: 10%;
-}
-
 .divcontact{
   padding:10%;
-  background-image: url(i3.png);
+  background-image: url('divBackGroung.png');
   border-radius: 8px;
-  color: #111;
   font-weight: bold;
 }
 
@@ -166,6 +104,9 @@ body {
   border-radius: 6px;
   text-align: center;
   font-weight: 600;
+}
+
+.btn-xl:hover{
   color: #fff;
 }
 
@@ -196,16 +137,14 @@ body {
   height: 100%;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
-  
 }
 
 .flip-box-front {
-  color: #111;
   font-weight: bold
 }
 
 .flip-box-back {
-  background-image: url(i3.png);
+  background-image: url('divBackGroung.png');
   color: #111;
   transform: rotateY(180deg);
   font-weight: bolder;
@@ -216,6 +155,7 @@ body {
   padding-top: 20px;
 }
 
-
-
-  
+.divabout{
+  background-image: url('divBackGroung.png');
+  font-weight: bold;
+}

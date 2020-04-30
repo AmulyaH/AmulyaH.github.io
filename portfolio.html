@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -9,13 +8,16 @@
   href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css"/>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   
   <title>Portfolio</title>
   <link rel="stylesheet" href="portfolio.css" />
 </head>
 
   <body>
-    <nav id="home" class="navbar navbar-expand-sm fixed-top">
+    <nav id="navhome" class="navbar navbar-expand-md fixed-top">
       <ul class="navbar-nav">
         <li class="nav-item">
           <button id="defaultOpen" class="anibutton tabbutton" onclick="openPage('home', this, 'cadetblue')"> Home </button>
@@ -38,49 +40,35 @@
       </ul>
     </nav>
 
-    <div id="skills" class="container tabcontent">
+  <div id="divBody">
+    <div id="home" class="container tabcontent divPadding">
       <div class="row">
-        <div class="col-sm-4">
-          <div class="row1colur">
-            <div class="skillHeading">
-              <h1>Area</h1>
-            </div>
-            <div class="skillDetails">
-              <ul>
-                <li><p>Machine Learning</p></li>
-                <li><p>Computer vision</p></li>
-                <li><p>Artificial Inteligence</p></li>
-                <li><p>Operating Systems</p></li>
-              </ul>
-            </div>
-          </div>
+        <div class="col-sm-12">
+          <h1 class="display-1 font-weight-bolder text-center text-info">Amulya Huchachar</h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-12">
+          <h1 class="display-3 font-weight-bolder text-center text-info">Full Stack Portfolio</h1>
+        </div>
+      </div>
+    </div>
+
+    <div id="about" class="container-fluid tabcontent divPadding">
+      <div class="row">
+        <div class="col-sm-3 offset-sm-2">
+            <img src="photo.png" class="img-circle img-responsive" alt="profilepic">
         </div>
         <div class="col-sm-4">
-          <div class="row1colur">
-            <div class="skillHeading">
-              <h1>Language</h1>
+          <div class="divabout">
+            <div class="aboutHeading">
+              <h1 class="font-weight-bold text-info mb-3">I am Amulya Huchachar</h1>
             </div>
-            <div class="skillDetails">
-              <ul>
-                <li><p>C/C++</p></li>
-                <li><p>HTML</p></li>
-                <li><p>CSS</p></li>
-                <li><p>JavaScript</p></li>
-                <li><p>Python</p></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-4">
-          <div class="row1colur">
-            <div class="skillHeading">
-              <h1>Frameworks</h1>
-            </div>
-            <div class="skillDetails">
-              <ul>
-                <li><p>Bootstrap</p></li>
-                <li><p>MySql</p></li>
-                <li><p>Jquery</p></li>
+              <div class="aboutDetails">
+                <p>I am a Graduate student at Portland State University major in Computer Science.</p>
+                <p>My main concentration is on Computer Vision and Machine Learning</p>
+                <p>I like to learn new innovative technologies and I want to work in the feild of computer vision</p>
+                <p>My hobbies are, Yoga, Photogrphy, Swimming</p>
               </ul>
             </div>
           </div>
@@ -88,7 +76,45 @@
       </div>
     </div>
 
-    <div id="projects" class="container-fluid tabcontent">
+    <div id="skills" class="container tabcontent divPadding">
+      <div class="row">
+        <div class="col-sm-4">
+          <div class="row1colur">
+              <h1 class="font-weight-bolder text-center">Area</h1><br>
+            <div class="font-weight-bold text-center h4">
+                <p>Machine Learning</p>
+                <p>Computer vision</p>
+                <p>Artificial Inteligence</p>
+                <p>Operating Systems</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="row1colur rounded">
+              <h1 class="font-weight-bolder text-center">Language</h1><br>
+            <div class="font-weight-bold text-center h4">
+                <p>C/C++</p>
+                <p>HTML</p>
+                <p>CSS</p>
+                <p>JavaScript</p>
+                <p>Python</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="row1colur rounded">
+              <h1 class="font-weight-bolder text-center">Frameworks</h1><br>
+              <div class="font-weight-bold text-center h4">
+                <p>Bootstrap</p>
+                <p>MySql</p>
+                <p>Jquery</p>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="projects" class="container-fluid tabcontent divPadding">
       <div class="row">
         <div class="col-sm-3">
           <div class="carsafety">
@@ -189,22 +215,11 @@
       </div>
     </div>
 
-    <div id="resume" class="container tabcontent">
-      <div class="row">
-        <div class="col-sm-4 offset-sm-2">
-          <div class="divresume">
-            <img src="Resume-1.png" class="img-responsive" alt="">
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <form action="mailto:someone@example.com" method="post" enctype="text/plain">
-    <div id="contact" class="container tabcontent">
+  <form action="mailto:amulya2@pdx.edu" method="post" enctype="text/plain">
+    <div id="contact" class="container tabcontent divPadding">
       <div class="form-group row">
         <div class="col-sm-10 offset-sm-1 col-md-10 offset-md-1 col-lg-4 offset-lg-4  col-xs-5 offset-sm-1">
           <div class="divcontact">
-            <form>
               <div class="form-group row customDiv">
                 <div class="col-sm-12">
                   <h1>Contact Me</h1>
@@ -237,30 +252,43 @@
                   <input type="submit" id="btnSubmit" class="btn bg-info col-sm-12 btn-xl" value="Submit">
                 </div>
               </div> 
-            </form>
           </div>
         </div>
       </div>
     </div>
-
   </form>
 
-    <div class="footer">
-      <div class="row">
-        <div class="col-sm-1 offset-sm-9">
-          <a href="#" class="fa fa-github iconsize"></a>
-        </div>
-        <div class="col-sm-1">
-            <a href="#" class="fa fa-linkedin iconsize"></a>
-        </div>
-        <div class="col-sm-1">
-          <a href="#" class="fa fa-envelope iconsize"></a>
+  <div id="resume" class="container-fluid tabcontent">
+    <div class="row">
+      <div class="col-sm-4 offset-sm-4" >
+        <a href="Resume-1.jpg" download><Button class="anibutton text-body">Download</Button></a>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-4 offset-sm-4">
+        <div class="divresume">
+          <img src="Resume-1.jpg" class="img-responsive" alt="resume">
         </div>
       </div>
     </div>
+  </div>
 
+    <div class="footer container-fluid">
+      <div class="row">
+        <div class="col-sm-1 offset-sm-9">
+          <a href="https://github.com/AmulyaH" target="_blank" class="fa fa-github fa-2x"></a>
+        </div>
+        <div class="col-sm-1">
+            <a href="https://www.linkedin.com/in/amulya-huchachar/" target="_blank" class="fa fa-linkedin fa-2x"></a>
+        </div>
+        <div class="col-sm-1 text-center">
+          <p>Created by : Amulya</p>
+        </div>
+      </div>
+    </div>
+  </div>
 
-    <script>
+      <script>
       function openPage(pageName,elmnt,color) {
         var i, tabcontent, tablinks;
         tabcontent = document.getElementsByClassName("tabcontent");
