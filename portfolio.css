@@ -10,7 +10,6 @@ body {
     padding-bottom: 10%;
   }
 
-  
   .resume{
     padding-bottom: 10%;
   }
@@ -114,7 +113,6 @@ body {
   background-image: url('images/divBackGroung.png');
   transform: rotateY(180deg);
 }
-
 
 .topnav {
   overflow: hidden;
