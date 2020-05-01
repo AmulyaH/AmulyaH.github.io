@@ -7,48 +7,32 @@
   <link rel="stylesheet" type="text/css"
   href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css"/>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-  
   <title>Portfolio</title>
   <link rel="stylesheet" href="portfolio.css" />
 </head>
 
   <body>
-    <nav id="navhome" class="navbar navbar-expand-md fixed-top font-weight-bolder text-center">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <button id="defaultOpen" class="anibutton tabbutton" onclick="openPage('home', this, 'cadetblue')"> Home </button>
-        </li>
-        <li class="nav-item">
-          <button class="anibutton tabbutton" onclick="openPage('about', this, 'cadetblue')"> About </button>
-        </li>
-        <li class="nav-item">
-          <button class="anibutton tabbutton" onclick="openPage('skills', this, 'cadetblue')"> Skills </button>
-        </li>
-        <li class="nav-item">
-          <button class="anibutton tabbutton" onclick="openPage('projects', this, 'cadetblue')"> Projects </button>
-        </li>
-        <li class="nav-item">
-          <button class="anibutton tabbutton" onclick="openPage('resume', this, 'cadetblue')"> Resume </button>
-        </li>
-        <li class="nav-item">
-          <button class="anibutton tabbutton" onclick="openPage('contact', this, 'cadetblue')"> Contact </button>
-        </li>
-      </ul>
-    </nav>
+    <div id="myTopnav" class="topnav p-2">
+      <button id="defaultOpen" class="anibutton tabbutton" onclick="openPage('home', this, 'cadetblue')"> <i class="fa fa-home fa-lg"></i> </button>
+      <button class="anibutton tabbutton font-weight-bolder" onclick="openPage('about', this, 'cadetblue')"> About </button>
+      <button class="anibutton tabbutton font-weight-bolder" onclick="openPage('skills', this, 'cadetblue')"> Skills </button>
+      <button class="anibutton tabbutton font-weight-bolder" onclick="openPage('projects', this, 'cadetblue')"> Projects </button>
+      <button class="anibutton tabbutton font-weight-bolder" onclick="openPage('resume', this, 'cadetblue')"> Resume </button>        
+      <button class="anibutton tabbutton font-weight-bolder" onclick="openPage('contact', this, 'cadetblue')"> Contact </button>
+      <a href="javascript:void(0);"  class="icon font-weight-bolder" onclick="myFunction()"><i class="fa fa-bars fa-2x"></i></a>
+  </div>
 
   <div>
     <div id="home" class="container tabcontent divPadding">
       <div class="row">
-        <div class="col-sm-12">
+        <div class="col-sm-12 col-md-12 col-lg-12 col-xs-12">
           <h1 class="display-1 font-weight-bolder text-center text-info">Amulya Huchachar</h1>
         </div>
       </div>
       <div class="row">
-        <div class="col-sm-12">
+        <div class="col-sm-12 col-md-12 col-lg-12 col-xs-12">
           <h1 class="display-3 font-weight-bolder text-center text-info">Full Stack Portfolio</h1>
         </div>
       </div>
@@ -56,10 +40,10 @@
 
     <div id="about" class="container-fluid tabcontent divPadding">
       <div class="row">
-        <div class="col-sm-3 offset-sm-2">
-            <img src="photo.png" class="img-circle img-responsive" alt="profilepic">
+        <div class="col-sm-4 col-md-4 col-lg-3 col-xl-3 col-xs-4 offset-md-1 offset-xl-2">
+            <img src="images/photo.png" class="img-circle img-responsive" alt="profilepic">
         </div>
-        <div class="col-sm-4">
+        <div class="col-sm-8 col-md-7 col-lg-6 col-xl-4 col-xs-8">
           <div class="divabout font-weight-bolder p-4">
               <h1 class="font-weight-bolder text-info p-1">I am Amulya Huchachar</h1>
                 <p>I am a Graduate student at Portland State University major in Computer Science.</p>
@@ -71,11 +55,11 @@
       </div>
     </div>
 
-    <div id="skills" class="container tabcontent divPadding">
+    <div id="skills" class="container-fluid tabcontent divPadding">
       <div class="row">
-        <div class="col-sm-4">
+        <div class="col-sm-8 col-md-5 col-lg-3 col-xs-12 offset-lg-1">
           <div class="row1colur p-4">
-              <h1 class="font-weight-bolder text-center">Area</h1><br>
+              <h2 class="font-weight-bolder text-center">Area</h2><br>
             <div class="font-weight-bold text-center h4">
                 <p>Machine Learning</p>
                 <p>Computer vision</p>
@@ -84,9 +68,9 @@
             </div>
           </div>
         </div>
-        <div class="col-sm-4">
+        <div class="col-sm-8 col-md-5 col-lg-3 col-xs-12">
           <div class="row1colur p-4">
-              <h1 class="font-weight-bolder text-center">Language</h1><br>
+              <h2 class="font-weight-bolder text-center">Language</h2><br>
             <div class="font-weight-bold text-center h4">
                 <p>C/C++</p>
                 <p>HTML</p>
@@ -96,9 +80,9 @@
             </div>
           </div>
         </div>
-        <div class="col-sm-4">
+        <div class="col-sm-8 col-md-5 col-lg-3 col-xs-12">
           <div class="row1colur p-4">
-              <h1 class="font-weight-bolder text-center">Frameworks</h1><br>
+              <h2 class="font-weight-bolder text-center">Frameworks</h2><br>
               <div class="font-weight-bold text-center h4">
                 <p>Bootstrap</p>
                 <p>MySql</p>
@@ -111,7 +95,7 @@
 
     <div id="projects" class="container-fluid tabcontent divPadding">
       <div class="row">
-        <div class="col-sm-3">
+        <div class="col-sm-8 col-md-6 col-lg-5 col-xl-3 col-xs-8">
             <div class="flip-box carsafety">
               <div class="flip-box-inner">
                 <div class="flip-box-front ">
@@ -119,7 +103,7 @@
                 </div>
                 <div class="flip-box-back text-left">
                   <h1 class="text-center font-weight-bold">CAR SAFETY</h1>
-                  <div class="p-4">
+                  <div>
                     <ul>
                       <li><p>This project is done for Inteligence Robtitics subject</p></li>
                       <li><p>Devloped the project using Python on Raspibery PI board</p></li>
@@ -133,7 +117,7 @@
               </div>
             </div>
         </div>
-        <div class="col-sm-3">
+        <div class="col-sm-8 col-md-6 col-lg-5 col-xl-3 col-xs-8">
             <div class="flip-box vslam">
               <div class="flip-box-inner">
                 <div class="flip-box-front">
@@ -141,7 +125,7 @@
                 </div>
                 <div class="flip-box-back text-left">
                   <h1 class="text-center font-weight-bold">VISUAL SLAM</h1>
-                    <div class="p-4">
+                    <div>
                     <ul>
                       <li><p>This project is done for Computer Vison Subject</p></li>
                       <li><p>SLAM is "Simultanious Localization and Mapping"</p></li>
@@ -155,7 +139,7 @@
               </div>
             </div>
         </div>
-        <div class="col-sm-3">
+        <div class="col-sm-8 col-md-6 col-lg-5 col-xl-3 col-xs-8">
             <div class="flip-box tictactoe">
               <div class="flip-box-inner">
                 <div class="flip-box-front">
@@ -163,7 +147,7 @@
                 </div>
                 <div class="flip-box-back text-left">
                   <h1 class="text-center font-weight-bold">TIC-TAC-TOE</h1>
-                  <div class="p-4">
+                  <div>
                     <ul>
                       <li><p>This project is done for Machine Learning Subject</p></li>
                       <li><p>Devloped the project using Python and Q learning algorithm</p></li>
@@ -177,7 +161,7 @@
               </div>
             </div>
         </div>
-        <div class="col-sm-3">
+        <div class="col-sm-8 col-md-6 col-lg-5 col-xl-3 col-xs-8">
             <div class="flip-box mazesolver">
               <div class="flip-box-inner">
                 <div class="flip-box-front">
@@ -185,7 +169,7 @@
                 </div>
                 <div class="flip-box-back text-left">
                   <h1 class="text-center font-weight-bolder">MAZE SOLVER</h1>
-                  <div class="p-4">
+                  <div>
                     <ul>
                       <li><p>This project is done for Advanced C++ Subject</p></li>
                       <li><p>Devloped the project using C++</p></li>
@@ -245,16 +229,16 @@
     </div>
   </form>
 
-  <div id="resume" class="container-fluid tabcontent">
+  <div id="resume" class="container-fluid tabcontent pb-5">
     <div class="row">
-      <div class="col-sm-4 offset-sm-4" >
-        <a href="Resume.jpg" download><Button class="anibutton font-weight-bolder text-body">Download</Button></a>
+      <div class="col-sm-12 col-md-8 col-xs-12 col-lg-4 col-xl-4 offset-xl-3 offset-md-2">
+        <a href="images/Resume.jpg" download><Button class="anibutton font-weight-bolder text-body">Download</Button></a>
       </div>
     </div>
     <div class="row">
-      <div class="col-sm-4 offset-sm-4">
+      <div class="col-sm-12 col-md-8 col-xs-12 col-lg-4 col-xl-4 offset-xl-3 offset-md-2">
         <div class="divresume">
-          <img src="Resume.jpg" class="img-responsive" alt="resume">
+          <img src="images/Resume.jpg" class="img-responsive" alt="resume">
         </div>
       </div>
     </div>
@@ -262,37 +246,48 @@
 
     <div class="footer container-fluid">
       <div class="row">
-        <div class="col-sm-1 offset-sm-9">
+        <div class="col-sm-1 col-xs-2 offset-sm-10 offset-xs-8">
           <a href="https://github.com/AmulyaH" target="_blank" class="fa fa-github fa-2x"></a>
         </div>
-        <div class="col-sm-1">
+        <div class="col-sm-1 col-xs-2">
             <a href="https://www.linkedin.com/in/amulya-huchachar/" target="_blank" class="fa fa-linkedin fa-2x"></a>
-        </div>
-        <div class="col-sm-1 text-center">
-          <p>Created by : Amulya</p>
         </div>
       </div>
     </div>
   </div>
 
-      <script>
-      function openPage(pageName,elmnt,color) {
+  <script>
+    function openPage(pageName,elmnt,color) 
+      {
         var i, tabcontent, tablinks;
         tabcontent = document.getElementsByClassName("tabcontent");
-        for (i = 0; i < tabcontent.length; i++) {
+        for (i = 0; i < tabcontent.length; i++) 
+        {
           tabcontent[i].style.display = "none";
         }
         tablinks = document.getElementsByClassName("anibutton");
-        for (i = 0; i < tablinks.length; i++) {
+        for (i = 0; i < tablinks.length; i++) 
+        {
           tablinks[i].style.backgroundColor = "";
         }
         document.getElementById(pageName).style.display = "block";
         elmnt.style.backgroundColor = color;
       }
-      
-      // Get the element with id="defaultOpen" and click on it
-      document.getElementById("defaultOpen").click();
-      </script>
 
-  <body>
+      document.getElementById("defaultOpen").click();
+
+    function myFunction() 
+    {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") 
+        {
+            x.className += " responsive";
+        } 
+        else 
+        {
+            x.className = "topnav";
+        }
+    }      
+  </script>
+<body>
 </html>
