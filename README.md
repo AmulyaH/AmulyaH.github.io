@@ -1,4 +1,4 @@
-# AmulyaH.github.i
+# AmulyaH.github.io
 
 My Portfolio
 
